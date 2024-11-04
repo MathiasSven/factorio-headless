@@ -1,0 +1,22 @@
+name: "Update flakes"
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 15 * *'
+
+jobs:
+    lockfile:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        - name: Install Nix
+          uses: DeterminateSystems/nix-installer-action@main
+        - name: Update flake.lock
+          run: nix flake update
+        - name: Test Flake with new Lock File
+          run: nix flake check -L
+        - name: Commit Changes
+          uses: stefanzweifel/git-auto-commit-action@v5
+          with:
+            commit_message: update flake.lock
