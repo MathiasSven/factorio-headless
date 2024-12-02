@@ -1,6 +1,6 @@
 {
     "releases": {
-        "stable": "2.0.21",
+        "stable": "2.0.23",
         "experimental": "2.0.23"
     },
     "versions": {
