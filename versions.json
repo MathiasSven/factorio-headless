@@ -1,9 +1,10 @@
 {
     "releases": {
         "stable": "2.0.69",
-        "experimental": "2.0.69"
+        "experimental": "2.0.70"
     },
     "versions": {
+        "2.0.70": "9fedd3c68ab5139fa40344f66998763784778277e6a4e00b28c62c8d3cb4710e",
         "2.0.69": "235147bb3ed6b5f0a6993893c6c92fdfe535ba95ab866046f51f865284b57341",
         "2.0.68": "a8a6ba2328a4d76e91a70155ae5b7ca975bad8a96d57d9c18ae3b0d89c1a56c5",
         "2.0.67": "5ae6950ce78f77ce456155b86d3b09bab4e6f8898c65fb627f932e2299dc88c2",
